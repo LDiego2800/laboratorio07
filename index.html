@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js"></script>
+</head>
+<style>
+    hero {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        border: solid;
+        margin-top: 70px;
+        background-color: rgb(189, 189, 221);
+        border-radius: 10px;
+        
+    }
+    nav {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        border-radius: 10px;
+        background-color: rgb(211, 211, 235);
+    }
+    img {
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        }
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        border: solid;
+        border-radius: 10px;
+        background-color: rgb(185, 185, 218);
+    }
+    body {
+        background-color: rgb(165, 233, 233);
+    }
+    
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Sobre mi</li>                      
+                </ul>
+            </div>
+             
+            <div>
+                <a href="#Proyectos">Proyectos</a>
+            </div>
+        </nav>
+    </header>
+    <hero>
+        <div>
+            <img src="https://scontent.flim39-1.fna.fbcdn.net/v/t1.6435-9/67438784_2309846262469264_1971735128140939264_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEIWnkoOGG-SQ52KXYg71k322aNYSEmgEDbZo1hISaAQBfsDnzLEBlHLY-_XxkAcyKXxdnO3jmY6Nw-eSyeU21d&_nc_ohc=GPLphLnf9AMQ7kNvgEu-Jcb&_nc_ht=scontent.flim39-1.fna&oh=00_AYAJUbfCMPt-CR7fPHIMK5iATN52Cu-9F4QLO6HONlb7Pw&oe=67206DEA"
+             alt="" width="50%">
+        </div>
+
+        <div>
+            <h1>Luis Mezarina, 
+                <script>
+                if (preguntaNombre=== ""){
+                    alert("No colocó nombre")
+                } else {
+                document.write("Bienvenido " + preguntaNombre);
+                }
+            </script></h1>
+            <p>Estudiante de programación, aún me encuentro
+                iniciandome en estas tecnologias y espero poder
+                aprenderlas de una manera efectiva y amena. 
+            </p>
+            <p>En mi esperiencia previa no se encuentra temas relacionados
+                a la tecnologia de manera formal, pero de manera autodidacta
+                he investigado sobre diversas ramas tecnológicas.
+            </p>
+            <p>Resaltando temas más personales tengo un pasado como jugador de ajedrez en 
+                torneos IRT (International Raiting Tournaments), por lo que el pensamiento
+                lógico no es algo nuevo para mí, y espero que ello me ayude en este nuevo 
+                sendero que estoy iniciando. 
+            </p>   
+        </div>    
+    </hero>
+    <footer>
+        <div>
+            <ul>
+                <li><a href="https://www.facebook.com/diego.mezarina/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/diego.d757761/" target="_blank">Instagram</a></li>
+                <li><button>Mas Información
+                    <script>
+                        if (preguntaCorreo === "") {
+                            document.write("No te enviaremos información");
+                        } else {
+                            document.write(preguntaCorreo);
+                        }
+                    </script>
+                </button></li>
+            </ul>
+        </div>
+        <div>
+            <p>955-177-891</p>
+        </div>
+    </footer>
+    
+</body>
+<script>
+
+</script>
+</html>
