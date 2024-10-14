@@ -1,27 +1,13 @@
-const preguntaNombre = prompt("¿Cual es tu nombre?");
-let preguntaGustos = prompt("¿Te gusta la programación?");
-const preguntaEdad = prompt("¿Cual es tu edad?");
-
-alert(preguntaNombre)
-
-
-
-function calcularSiEsMayorDeEdad() {
-    if (parseInt(preguntaEdad) >= 18) {
-        alert("La persona es MAYOR de edad");
-    } else {
-        alert("La persona es MENOR de edad");
+while(true) {
+    const preguntaEdad = prompt("Escribe el número 21 o no podras entrar");
+    if (parseInt(preguntaEdad) === 21) {
+        break;
     }
 }
 
-calcularSiEsMayorDeEdad(); 
-
-function preguntarSiLeGustaLaProgramación() {
-    if (preguntaGustos.toLocaleLowerCase() === "si") {
-        alert("Bienvenido, aqui aprendemos programación");
-    } else {
-        alert("Error, Actualiza la pagina y vuelve a intentar");
-    }
+const cantidadPiezasAjedrez = prompt("¿Cuantas veces quieres que se muestre la pieza de ajedrez?");
+let contador = 0;
+while (contador < parseInt(cantidadPiezasAjedrez)) {
+    document.write("<img src='https://w7.pngwing.com/pngs/129/594/png-transparent-chess-piece-king-queen-pin-chess-king-pin-queen.png' 'width=10px'/>")
+    contador += 1;
 }
-
-preguntarSiLeGustaLaProgramación();
